@@ -1,0 +1,39 @@
+{%extends 'base.html'%}
+    <!-- END nav -->
+   {% block content %}
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url('https://vecinalnorte3.sfo2.digitaloceanspaces.com/images/salacuna.png');">
+  <div class="overlay"></div>
+    <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center">
+      <div class="col-md-9 ftco-animate text-center">
+        <h1 class="mb-2 bread">Salacuna</h1>
+        <p class="breadcrumbs"><span class="mr-2"><a href="/home">Inicio <i class="ion-ios-arrow-forward"></i></a></span> <span>Recursos <i class="ion-ios-arrow-forward"></i></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ftco-section contact-section">
+
+    <div class="container">
+    
+        <div class="row d-flex mb-5 contact-info">
+        {% for item  in Material_salacuna_list  %}
+            <div class="col-md-3 d-flex">
+          	    <div class="bg-light align-self-stretch box p-4 text-center">
+          		    <h3 class="mb-4"> {{ item.nombre}}</h3>
+                    <img src='https://image.flaticon.com/icons/svg/896/896753.svg'  width="100"></a>
+                      
+                    <a href={{ item.link}} target="_blank"  class="btn btn-secondary px-4 py-3 mt-3">Acceder a Recurso</a></p>
+	            </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+    </div>
+
+</section>
+
+{%endblock%}
