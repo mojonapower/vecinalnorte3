@@ -44,13 +44,13 @@
     	</div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
 	    <div class="container d-flex align-items-center">
-	    	<a class="navbar-brand" href="/home"><img src='https://vecinalnorte3.sfo2.digitaloceanspaces.com/logo+iconojardin.png'  width="300"></a>
+	    	<a class="navbar-brand" href="{% url 'home' %}"><img src='https://vecinalnorte3.sfo2.digitaloceanspaces.com/logo+iconojardin.png'  width="300"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	        	<li class="nav-item active"><a href="" class="nav-link pl-0">Inicio</a></li>
+	        	<li class="nav-item active"><a href="{% url 'home' %}" class="nav-link pl-0">Inicio</a></li>
 	        	<li class="nav-item"><a href="nuestrojardin" class="nav-link">Nuestro Jardín</a></li>
 	        	<li class="nav-item"><a href="familinea" class="nav-link">Familinea</a></li>
 	        	<li class="nav-item"><a href="recursos" class="nav-link">Recursos Pedagógicos</a></li>
@@ -145,7 +145,7 @@
         </div>
 			</div>
 		</section>
-
+<!--
 		<section class="ftco-intro" style="background-image: url({%static "images/smartphonekid.jpg"%});" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
@@ -159,14 +159,57 @@
 					</div>
 				</div>
 			</div>
-		</section>
-	<section class="ftco-section contact-section">
-		<a class="navbar-brand" href="http://www.fonoinfancia.cl/"><img src='https://vecinalnorte3.sfo2.digitaloceanspaces.com/images/fonoinfancia.jpeg'  width="500"></a>
+		</section>-->
+        <section class="ftco-section testimony-section bg-light">
+      <div class="container">
 
-		<a class="navbar-brand" href="https://www.integra.cl/"><img src='https://vecinalnorte3.sfo2.digitaloceanspaces.com/images/WhatsApp%20Image%202020-05-12%20at%2018.20.49.jpeg'  width="550"></a>
-		<a class="navbar-brand" href="https://parvularia.mineduc.cl/"><img src='https://vecinalnorte3.sfo2.digitaloceanspaces.com/images/WhatsApp%20Image%202020-05-12%20at%2018.24.23.jpeg'  width="200"></a>
-	
-	</section>
+        <div class="row ftco-animate justify-content-center">
+        <div class="col-md-8 text-center heading-section ftco-animate">
+          <h2 class="mb-4"><span>Sitios de Interés</span> </h2>
+        </div>
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel">
+              <div class="item">
+                <div class="testimony-wrap d-flex"> 
+                  <div class="text ml-2 bg-light">
+                  <p class="name"><strong>Fono Infancia</strong></p>
+                    <p>Servicio gratuito y confidencial, atendido por un equipo de psicólogos y psicólogas especialistas en temas de infancia y familia, que responde en forma inmediata y confidencial tus dudas o inquietudes sobre la crianza de niños y niñas.</p>
+                    
+                    <a class="navbar-brand" href="http://www.fonoinfancia.cl/"><img src='https://vecinalnorte3.sfo2.digitaloceanspaces.com/images/fonoinfancia.jpeg'  width="500"></a>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex"> 
+                  <div class="text ml-2 bg-light">
+                  
+                    <p class="name"><strong>Fundación Integra</strong></p>
+                    <p>Fundación Integra lleva 28 años entregando educación de calidad y gratuita.</p>
+                    
+                   		<a class="navbar-brand" href="https://www.integra.cl/"><img src='https://vecinalnorte3.sfo2.digitaloceanspaces.com/images/WhatsApp%20Image%202020-05-12%20at%2018.20.49.jpeg'  width="550"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex"> 
+                  <div class="text ml-2 bg-light">
+                    <p class="name"><strong>Superintendencia de Ecudación Parvularia</strong></p>
+                   
+                    <p>Servicio público, funcionalmente descentralizado y territorialmente desconcentrado, dotado de personalidad jurídica y patrimonio propio, y que se relaciona con el Presidente de la República por intermedio del Ministerio de Educación.</p>
+                    
+                   <a class="navbar-brand" href="https://parvularia.mineduc.cl/"><img src='https://vecinalnorte3.sfo2.digitaloceanspaces.com/images/WhatsApp%20Image%202020-05-12%20at%2018.24.23.jpeg'  width="80"></a>
+                    
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
